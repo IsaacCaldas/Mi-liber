@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  default_url_options :host => "localhost:3000"
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :users
+  resources :roles
+
+  root 'main#index'
+
 end
