@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   resources :users, defaults: { format: :json } 
   resources :categories, defaults: { format: :json }
   resources :books, defaults: { format: :json }
-  resources :user_book, defaults: { format: :json }
 
   root 'main#index'
 

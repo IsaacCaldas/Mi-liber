@@ -2,10 +2,14 @@
 
 one:
   name: MyString
-  total_pages: 1
+  pages_total: 1
+  pages_readed: 1
+  author: MyString
   category: one
 
 two:
   name: MyString
-  total_pages: 1
+  pages_total: 1
+  pages_readed: 1
+  author: MyString
   category: two
