@@ -1,4 +1,12 @@
 class User < ApplicationRecord
-  belongs_to :role
   has_many :categories
+
+  def complete_name
+    "#{first_name} #{sur_name}"
+  end
+
+  def encrypted_password
+    "********"
+  end
+
 end

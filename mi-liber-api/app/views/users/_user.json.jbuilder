@@ -1,0 +1,10 @@
+json.extract! user,
+  :id,
+  :admin,
+  :complete_name,
+  :first_name,
+  :sur_name,
+  :birth_date,
+  :gender, 
+  :email,
+  :encrypted_password

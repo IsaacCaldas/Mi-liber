@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  default_url_options :host => "localhost:3000"
 
-  resources :roles, defaults: { format: :json }
-  resources :users, defaults: { format: :json } 
-  resources :categories, defaults: { format: :json }
-  resources :books, defaults: { format: :json }
+  defaults format: :json do
+    resources :users
+    resources :categories
+    resources :books
+  end
 
   root 'main#index'
 
